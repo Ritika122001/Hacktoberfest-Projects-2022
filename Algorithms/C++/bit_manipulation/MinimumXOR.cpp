@@ -22,11 +22,9 @@
  **/
 
 #include<bits/stdc++.h>
+using namespace std;
 
-class Solution {
-public:
- 
-    int minimizeXor(int num1, int num2) {
+int minimizeXor(int num1, int num2) {
         
      int cnta = __builtin_popcount(num1), cntb = __builtin_popcount(num2); 
      //____builtin_popcount for counting the set bits in the number
@@ -70,4 +68,19 @@ public:
         
         
     }
-};
+
+
+int main()
+{
+
+
+int a;
+int b;
+cin>>a>>b;
+
+
+cout<<minimizeXor(a,b);
+
+return 0;
+
+}
